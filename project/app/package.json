@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitedge --ssr --force",
+    "dev:spa": "vitedge --force",
+    "preview": "vitedge preview",
+    "build": "rm -rf dist && vitedge build",
+    "refresh": "rm -rf node_modules/vitedge && cp -r ../../src node_modules/vitedge && cp ../../src/bin/cli.js node_modules/.bin/vitedge",
+    "serve:worker": "wrangler dev",
+    "serve:node": "cd ../node-server && yarn serve app",
+    "deploy": "export EXAMPLE_NAME=vue && cd ../worker-site && yarn deploy --env vue"
+  },
+  "dependencies": {
+    "@nuxt/devalue": "^2.0.0",
+    "@vue/server-renderer": "^3.2.26",
+    "@vueuse/head": "^0.6.0",
+    "axios": "^0.24.0",
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.6",
+    "uuid": "^8.3.2",
+    "vite-ssr": "^0.14.3",
+    "vitedge": "^0.18.1",
+    "vue": "^3.2.25",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.9",
+    "vite": "^2.7.2"
+  }
+}

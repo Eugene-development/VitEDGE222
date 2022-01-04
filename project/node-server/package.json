@@ -1,0 +1,14 @@
+{
+  "name": "node-server-example",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "node --experimental-json-modules index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "vitedge": "^0.18.1"
+  }
+}
