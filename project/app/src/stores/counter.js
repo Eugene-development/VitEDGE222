@@ -42,13 +42,13 @@ export const useCounter = defineStore("counter",{
             const url = 'get-all-category/'
 
 
-            const {data : mainAxi} = await getDataMain(url, apiCRUD);
+            // const {data : mainAxi} = await getDataMain(url, apiCRUD);
 
 
 
             this.axi = all;
             this.axiUsers = all;
-            this.axiMain = mainAxi
+            // this.axiMain = mainAxi
 
             // console.log(all)
             console.log(name('Victory'))
@@ -65,7 +65,7 @@ export const useCounter = defineStore("counter",{
         double: (state) => state.n+2,
         axios: (state) => state.axi,
         axiosUsers: (state) => state.axiUsers,
-        axiosMain: (state) => state.axiMain
+        // axiosMain: (state) => state.axiMain
     },
 
 })
