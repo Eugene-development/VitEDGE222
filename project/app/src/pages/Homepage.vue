@@ -4,7 +4,7 @@
   <p class="bg-red-100">test2-{{axi}}</p><br>
   <p class="bg-blue-100">test3-{{axiosUsers}}</p>
   <br>
-<!--  <p class="bg-green-100">test3-{{axiosMain}}</p>-->
+  <p class="bg-green-100">test3-{{axiosMain}}</p>
   <br>
 
   <button class="bg-red-800" @click="changeMe">Click me</button>

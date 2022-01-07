@@ -9,9 +9,9 @@ import devalue from '@nuxt/devalue'
 export default vitedge(
     App,
     { routes,
-        // transformState(state) {
-        //     return import.meta.env.SSR ? devalue(state) : state
-        // },
+        transformState(state) {
+            return import.meta.env.SSR ? devalue(state) : state
+        },
     },
     ({ app, router, isClient, initialState }) => {
         // Custom setup hook.
