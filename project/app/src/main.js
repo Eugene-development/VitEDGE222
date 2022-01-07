@@ -22,7 +22,7 @@ export default vitedge(
         // Sync initialState with the store:
         if (import.meta.env.SSR) {
             initialState.pinia = pinia.state.value
-        } else {
+        } else if (isClient){
             pinia.state.value = initialState.pinia
         }
 
