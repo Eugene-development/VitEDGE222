@@ -4,6 +4,8 @@
 </script>
 
 <template>
+  <RouterLink to="/">Go to Home</RouterLink>||
+  <RouterLink to="/test">Go to TEST</RouterLink>
   <router-view/>
 </template>
 
